@@ -1,0 +1,36 @@
+#cover
+	background: url('img/cover.jpg')
+	background-size: cover
+
+section:nth-child(even)
+	background: rgba(0,0,0,0.03)
+
+.figure-centered figure
+	margin: auto
+
+.sidebar
+	display: none
+	position: absolute
+	right: -148.83px
+	background: #fff
+	transition: right .5s
+	height: calc(100vh - 3.25rem)
+	background: rgb(242,242,242)
+	text-align: center
+
+#schedule-table .box
+	cursor: pointer
+	background: #ffffff
+	transition: background 0.5s
+
+#schedule-table .box.disabled
+	background: #ff867f
+
+#schedule-table .box.selected
+	background: #83b9ff
+
+@keyframes slidein
+	from
+		right: -100%
+	to
+		right: 0
